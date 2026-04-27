@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte e Atendimento - ReduziX</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        :root {
+            --primary: #EB4E4E;
+            --secondary: #2F94CE;
+            --bg: #0B1220;
+            --surface: #151C2C;
+            --text: #F3F4F6;
+            --text-dim: #9CA3AF;
+            --whatsapp: #25D366;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+            align-items: center;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background-color: var(--surface);
+            padding: 40px;
+            border-radius: 32px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            border: 1px solid rgba(255,255,255,0.05);
+            text-align: center;
+        }
+        .logo {
+            margin-bottom: 30px;
+        }
+        .logo img {
+            max-width: 180px;
+            filter: drop-shadow(0 0 10px rgba(235, 78, 78, 0.2));
+        }
+        h1 {
+            color: var(--text);
+            font-weight: 900;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+            font-size: 2.5rem;
+        }
+        p.subtitle {
+            color: var(--text-dim);
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+        .support-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 24px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease;
+        }
+        .support-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--secondary);
+        }
+        .icon-circle {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--secondary), #1a5f85);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 28px;
+            box-shadow: 0 10px 20px rgba(47, 148, 206, 0.3);
+        }
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, var(--whatsapp), #128c7e);
+            color: white;
+            padding: 18px 36px;
+            border-radius: 100px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+            transition: all 0.3s ease;
+        }
+        .btn-whatsapp:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
+        }
+        .links {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 0.9rem;
+        }
+        .links a {
+            color: var(--text-dim);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .links a:hover {
+            color: var(--primary);
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: var(--text-dim);
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="assets/LOGO-REDUZIX.png" alt="ReduziX Logo">
+        </div>
+        <h1>Precisa de Ajuda?</h1>
+        <p class="subtitle">Nossa equipe de suporte técnico está pronta para atender você e sua empresa.</p>
+
+        <div class="support-card">
+            <div class="icon-circle">
+                <i class="bi bi-whatsapp"></i>
+            </div>
+            <h3>Suporte Imediato</h3>
+            <p>Atendimento especializado via WhatsApp para dúvidas técnicas, acesso e configurações.</p>
+            <br>
+            <a href="https://wa.me/5591982811097?text=Olá,%20preciso%20de%20suporte%20técnico%20com%20o%20ReduziX." class="btn-whatsapp">
+                <i class="bi bi-whatsapp"></i> Chamar Suporte
+            </a>
+            <div style="margin-top: 25px; padding-top: 25px; border-top: 1px solid rgba(255,255,255,0.05);">
+                <p style="margin-bottom: 10px; font-size: 0.9rem;">Ou envie um e-mail para:</p>
+                <a href="mailto:andre.lucas010@hotmail.com" style="color: var(--secondary); text-decoration: none; font-weight: 600; font-size: 1.1rem; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                    <i class="bi bi-envelope-at-fill"></i> andre.lucas010@hotmail.com
+                </a>
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="politica.html">Política de Privacidade</a>
+            <span>•</span>
+            <a href="baixar-reduzix-app.php">Página Principal</a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 ReduziX - Inteligência em Gestão de Varejo.<br>
+            Elite 2026 Framework v12.1.1
+        </div>
+    </div>
+</body>
+</html>
